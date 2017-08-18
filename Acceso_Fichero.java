@@ -12,7 +12,9 @@ public class Acceso_Fichero {
     public static void main(String[] args) {
         //COMO INSPECCIONAR LOS ARCHIVO QUE TENEMOS EN UNA CARPETA
         // 1º Ponemos la ruta de la carpeta en un objeto File
-        File ruta = new File("D:\\01 Tutorial_Java_Aplicaciones\\JavaApplication96_Prueba_Rutas");
+        //File ruta = new File("D:\\01 Tutorial_Java_Aplicaciones\\JavaApplication96_Prueba_Rutas");
+        // --VARIABLE 'File.Separator' PARA QUE LA RUTA SEA VALIDA EN TODOS LOS SO.
+        File ruta = new File("D:" +File.separator+ "01 Tutorial_Java_Aplicaciones" +File.separator+ "JavaApplication96_Prueba_Rutas");
         //hacemos una comprobacion de la ruta y si existe la carpeta
         System.out.println("=== RUTA DE LA CARPETA ---> " +ruta.getAbsolutePath());
         System.out.println("=== EXISTE LA CARPETA ---> " +ruta.exists());
